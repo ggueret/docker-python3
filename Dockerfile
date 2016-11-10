@@ -16,7 +16,7 @@ RUN curl -s https://bootstrap.pypa.io/get-pip.py | python
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
-RUN echo "python version: `python3 --version`"
+RUN echo "python version: `python --version`"
 RUN echo "pip version: `pip --version`"
 
-WORKDIR /data
+WORKDIR /usr/src/scripts
